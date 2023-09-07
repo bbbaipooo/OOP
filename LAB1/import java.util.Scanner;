@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Pro4_64011041 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter weitght in pounds : ");
+        double weightPounds=input.nextDouble;
+        System.out.print("Enter height in inches : ");
+        double heightInches=input.nextDouble;
+
+        double weightKilograms = weightPounds * 0.45359237;
+        double heightMeters = heightInches * 0.0254;
+        BMI=weightKilograms/Math.pow(heightMeters,2);
+        System.out.printf("BMI is %.4f",BMI);
+    }
+}
